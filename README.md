@@ -1,2 +1,20 @@
-# Amigo-Secreto-Versi-n_1
-Iniciando el camino del aprendizaje, primera versión de app para sortear amigo secreto
+![Amigo Secreto](assets/preview.png)
+
+# Amigo Secreto 
+Interfaz con **tarjetas, gradientes y chips** removibles.
+
+## Funciones
+- Agregar nombres con Enter o con el botón.
+- Lista en “chips” con botón × para quitar.
+- Sortear un nombre y mostrarlo con un estilo destacado.
+- Botón “Limpiar lista”.
+
+## Estructura
+```
+amigo-secreto/
+├─ index.html
+├─ style.css
+├─ app.js
+└─ assets/
+   └─ preview.png
+```

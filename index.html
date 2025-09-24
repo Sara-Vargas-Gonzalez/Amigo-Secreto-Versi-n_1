@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigo Secreto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app" role="main">
+    <header class="head">
+      <div class="logo" aria-hidden="true">🎁</div>
+      <div>
+        <h1>Amigo Secreto</h1>
+        <p class="muted">Agrega nombres, visualiza la lista y realiza el sorteo.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <label class="sr-only" for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Escribe un nombre y presiona Agregar">
+        <button class="btn btn-primary" id="agregarBtn" onclick="agregarAmigo()">Agregar</button>
+      </div>
+      <div class="row actions">
+        <button class="btn" id="limpiarBtn">Limpiar lista</button>
+        <span class="muted small">Consejo: presiona Enter para agregar más rápido.</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Lista</h2>
+      <ul id="listaAmigos" class="chips" aria-live="polite"></ul>
+    </section>
+
+    <section class="card center">
+      <button class="btn btn-cta" id="sortearBtn">🎲 Sortear</button>
+      <div id="resultado" class="resultado muted">— aún no sorteado —</div>
+    </section>
+
+    <footer class="foot muted small">
+      Hecho por Sara Vargas, 1era versión.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
